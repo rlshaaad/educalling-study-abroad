@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>EduCalling Global LLP | Study MBBS Abroad | Kozhikode</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+<!-- ============================================================
+  ██████╗  █████╗ ████████╗ █████╗      EDIT GUIDE
+  ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗
+  ██║  ██║███████║   ██║   ███████║    ➜ SECTION 1: CONTACT INFO
+  ██║  ██║██╔══██║   ██║   ██╔══██║    ➜ SECTION 2: UNIVERSITIES DATA
+  ██████╔╝██║  ██║   ██║   ██║  ██║    ➜ SECTION 3: ADMIN PANEL (hidden)
+  ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+  Admin Panel: Type "admin2025" on keyboard anywhere to open
+============================================================ -->
+
+<style>
+/* ============================================================
+   ROOT DESIGN TOKENS — change colors here to retheme entire site
+============================================================ */
+:root {
+  --c-navy:      #0f1f5c;   /* primary dark navy */
+  --c-navy2:     #1a2f7a;   /* slightly lighter navy */
+  --c-orange:    #f47920;   /* brand orange */
+  --c-orange2:   #e06810;   /* darker orange for hover */
+  --c-gold:      #fbbf24;   /* accent gold */
+  --c-bg:        #f6f8fe;   /* page background */
+  --c-white:     #ffffff;
+  --c-text:      #1e293b;
+  --c-muted:     #64748b;
+  --c-border:    #e2e8f0;
+  --c-card:      #ffffff;
+  --shadow-sm:   0 1px 3px rgba(0,0,0,.07);
+  --shadow-md:   0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg:   0 12px 40px rgba(15,31,92,.12);
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   18px;
+  --radius-xl:   24px;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { font-family:'Inter',sans-serif; color:var(--c-text); background:var(--c-bg); line-height:1.6; }
+img { max-width:100%; display:block; }
+a { text-decoration:none; }
+button { font-family:'Inter',sans-serif; cursor:pointer; border:none; background:none; }
+
+/* ============================================================
+   SCROLLBAR
+============================================================ */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:#f1f1f1; }
+::-webkit-scrollbar-thumb { background:var(--c-orange); border-radius:3px; }
+
+/* ============================================================
+   TYPOGRAPHY HELPERS
+============================================================ */
+.t-orange { color:var(--c-orange); }
+.t-navy   { color:var(--c-navy); }
+.t-muted  { color:var(--c-muted); }
+.f-pop    { font-family:'Poppins',sans-serif; }
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn { display:inline-flex; align-items:center; gap:7px; padding:11px 24px; border-radius:var(--radius-sm); font-weight:700; font-size:14px; transition:all .2s; border:2px solid transparent; cursor:pointer; }
+.btn-primary   { background:var(--c-orange); color:#fff; }
+.btn-primary:hover { background:var(--c-orange2); transform:translateY(-1px); box-shadow:0 6px 20px rgba(244,121,32,.35); }
+.btn-outline   { border-color:var(--c-navy); color:var(--c-navy); background:transparent; }
+.btn-outline:hover { background:var(--c-navy); color:#fff; }
+.btn-white     { background:#fff; color:var(--c-navy); }
+.btn-white:hover { background:#f0f4ff; }
+.btn-lg        { padding:15px 34px; font-size:15.5px; border-radius:10px; }
+
+/* ============================================================
+   TOPBAR
+============================================================ */
+.topbar { background:var(--c-navy); padding:9px 0; }
+.topbar-in { max-width:1260px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
+.topbar-in, .topbar-in a { font-size:12.5px; color:rgba(255,255,255,.72); }
+.topbar-in a:hover { color:var(--c-gold); }
+.tb-left, .tb-right { display:flex; align-items:center; gap:18px; }
+.tb-item { display:flex; align-items:center; gap:6px; }
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+.navbar { background:#fff; border-bottom:3px solid var(--c-orange); position:sticky; top:0; z-index:900; box-shadow:0 2px 20px rgba(0,0,0,.07); }
+.nav-in  { max-width:1260px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:70px; }
+/* Logo */
+.logo-wrap { display:flex; align-items:center; gap:11px; }
+.logo-icon { width:46px; height:46px; flex-shrink:0; }
+.logo-text  { font-family:'Poppins',sans-serif; }
+.logo-name  { font-size:21px; font-weight:900; line-height:1; }
+.logo-name .ln1 { color:var(--c-navy); }
+.logo-name .ln2 { color:var(--c-orange); }
+.logo-sub   { font-size:9.5px; font-weight:700; letter-spacing:2.8px; color:#aaa; margin-top:3px; }
+/* Menu */
+.nav-menu  { display:flex; gap:2px; list-style:none; }
+.nav-menu a { display:block; padding:8px 15px; border-radius:7px; font-size:14px; font-weight:600; color:var(--c-navy); transition:all .15s; }
+.nav-menu a:hover, .nav-menu a.act { color:var(--c-orange); background:#fff5ec; }
+/* CTA */
+.nav-ctas { display:flex; gap:10px; align-items:center; }
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero { background:linear-gradient(148deg,#080f38 0%,var(--c-navy) 45%,#1a3a8a 100%); min-height:94vh; display:flex; align-items:center; padding:90px 24px 60px; position:relative; overflow:hidden; }
+.hero-orb1 { position:absolute; right:-80px; top:-80px; width:540px; height:540px; border-radius:50%; background:radial-gradient(circle,rgba(244,121,32,.17) 0%,transparent 65%); }
+.hero-orb2 { position:absolute; left:-60px; bottom:-60px; width:360px; height:360px; border-radius:50%; background:radial-gradient(circle,rgba(255,255,255,.04) 0%,transparent 65%); }
+.hero-grid { max-width:1260px; margin:0 auto; width:100%; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; position:relative; z-index:2; }
+.hero-pill { display:inline-flex; align-items:center; gap:7px; background:rgba(244,121,32,.14); border:1px solid rgba(244,121,32,.35); color:#ffaf65; padding:7px 17px; border-radius:30px; font-size:12.5px; font-weight:700; letter-spacing:.4px; margin-bottom:22px; }
+.hero h1 { font-family:'Poppins',sans-serif; font-size:50px; font-weight:900; color:#fff; line-height:1.1; margin-bottom:18px; }
+.hero h1 em { color:var(--c-orange); font-style:normal; display:block; }
+.hero-desc { color:rgba(255,255,255,.76); font-size:17px; line-height:1.78; margin-bottom:34px; max-width:500px; }
+.hero-btns { display:flex; gap:14px; margin-bottom:50px; flex-wrap:wrap; }
+.hero-stats { display:flex; gap:30px; flex-wrap:wrap; }
+.hstat { text-align:center; }
+.hstat-n { font-family:'Poppins',sans-serif; font-size:32px; font-weight:900; color:var(--c-orange); line-height:1; }
+.hstat-l { font-size:12px; color:rgba(255,255,255,.58); margin-top:4px; }
+/* Search card */
+.search-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.13); border-radius:var(--radius-xl); padding:32px; backdrop-filter:blur(24px); }
+.sc-title { font-family:'Poppins',sans-serif; font-size:18px; font-weight:800; color:#fff; margin-bottom:26px; }
+.sc-label { font-size:13px; color:rgba(255,255,255,.65); margin-bottom:6px; font-weight:500; }
+.sc-val { font-family:'Poppins',sans-serif; font-size:30px; font-weight:900; color:var(--c-orange); margin-bottom:10px; }
+.sc-slider { width:100%; -webkit-appearance:none; height:7px; border-radius:4px; background:rgba(255,255,255,.18); outline:none; cursor:pointer; margin-bottom:8px; }
+.sc-slider::-webkit-slider-thumb { -webkit-appearance:none; width:24px; height:24px; border-radius:50%; background:var(--c-orange); cursor:pointer; box-shadow:0 0 14px rgba(244,121,32,.65); }
+.sc-marks { display:flex; justify-content:space-between; font-size:11px; color:rgba(255,255,255,.38); margin-bottom:22px; }
+.sc-select { width:100%; padding:13px 14px; border-radius:9px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); color:#fff; font-size:14px; font-family:'Inter',sans-serif; outline:none; cursor:pointer; margin-bottom:18px; }
+.sc-select option { background:var(--c-navy); color:#fff; }
+
+/* ============================================================
+   MARQUEE
+============================================================ */
+.marquee { background:var(--c-orange); padding:13px 0; overflow:hidden; white-space:nowrap; }
+.mq-track { display:inline-flex; gap:44px; animation:mq 26s linear infinite; }
+@keyframes mq { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+.mq-item { color:#fff; font-size:13px; font-weight:700; display:inline-flex; align-items:center; gap:7px; }
+
+/* ============================================================
+   SECTIONS
+============================================================ */
+.section { padding:84px 24px; }
+.section-alt { background:#fff; }
+.container { max-width:1260px; margin:0 auto; }
+.sec-hd { text-align:center; margin-bottom:56px; }
+.sec-ey { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:3.5px; color:var(--c-orange); margin-bottom:10px; }
+.sec-title { font-family:'Poppins',sans-serif; font-size:36px; font-weight:800; color:var(--c-navy); line-height:1.2; margin-bottom:12px; }
+.sec-desc { font-size:15.5px; color:var(--c-muted); max-width:580px; margin:0 auto; }
+.sec-bar { width:52px; height:4px; background:var(--c-orange); border-radius:2px; margin:14px auto 0; }
+
+/* ============================================================
+   BUDGET FILTER SECTION
+============================================================ */
+.budget-sec { background:linear-gradient(135deg,#080f38,var(--c-navy2)); padding:72px 24px; }
+.budget-wrap { max-width:780px; margin:0 auto; text-align:center; }
+.budget-wrap h2 { font-family:'Poppins',sans-serif; font-size:32px; font-weight:800; color:#fff; margin-bottom:10px; }
+.budget-wrap p { color:rgba(255,255,255,.68); margin-bottom:38px; font-size:15.5px; max-width:600px; margin-left:auto; margin-right:auto; }
+.budget-box { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:var(--radius-xl); padding:36px; margin-bottom:28px; }
+.slider-row { display:flex; align-items:center; gap:18px; margin-bottom:14px; flex-wrap:wrap; }
+.slider-row label { color:rgba(255,255,255,.75); font-size:14px; font-weight:600; flex-shrink:0; }
+.slider-row .big-val { font-family:'Poppins',sans-serif; font-size:30px; font-weight:900; color:var(--c-orange); margin-left:auto; }
+.big-slider { width:100%; -webkit-appearance:none; height:8px; border-radius:4px; background:rgba(255,255,255,.2); outline:none; cursor:pointer; }
+.big-slider::-webkit-slider-thumb { -webkit-appearance:none; width:28px; height:28px; border-radius:50%; background:var(--c-orange); cursor:pointer; box-shadow:0 0 18px rgba(244,121,32,.7); }
+.big-marks { display:flex; justify-content:space-between; font-size:11px; color:rgba(255,255,255,.36); margin-top:10px; }
+.match-result { border-top:1px solid rgba(255,255,255,.1); padding-top:24px; margin-top:24px; }
+.match-num { font-family:'Poppins',sans-serif; font-size:22px; font-weight:800; color:var(--c-orange); margin-bottom:6px; }
+.match-desc { color:rgba(255,255,255,.6); font-size:14px; margin-bottom:22px; }
+
+/* ============================================================
+   COUNTRY TABS
+============================================================ */
+.ctabs { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:48px; }
+.ctab { padding:11px 24px; border-radius:30px; border:2px solid var(--c-border); background:#fff; font-size:13.5px; font-weight:700; color:var(--c-muted); cursor:pointer; transition:all .2s; display:inline-flex; align-items:center; gap:8px; }
+.ctab .fl { font-size:18px; }
+.ctab:hover { border-color:var(--c-orange); color:var(--c-orange); }
+.ctab.act { border-color:var(--c-orange); background:var(--c-orange); color:#fff; }
+
+/* Sort bar */
+.sort-bar { display:flex; align-items:center; gap:14px; margin-bottom:28px; flex-wrap:wrap; }
+.sort-bar span { font-size:13.5px; font-weight:600; color:var(--c-muted); }
+.sort-btn { padding:8px 16px; border-radius:7px; border:1.5px solid var(--c-border); background:#fff; font-size:13px; font-weight:600; color:var(--c-navy); cursor:pointer; transition:all .2s; }
+.sort-btn:hover, .sort-btn.act { border-color:var(--c-orange); color:var(--c-orange); background:#fff8f3; }
+.result-count { margin-left:auto; font-size:13px; color:var(--c-muted); font-weight:600; }
+
+/* ============================================================
+   UNIVERSITY GRID & CARDS
+============================================================ */
+.unis-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:24px; }
+.ucard { background:var(--c-card); border-radius:var(--radius-lg); border:1.5px solid var(--c-border); box-shadow:var(--shadow-md); overflow:hidden; transition:all .3s; display:none; flex-direction:column; }
+.ucard.show { display:flex; }
+.ucard:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:rgba(244,121,32,.25); }
+.ucard.budget-match { border-color:rgba(244,121,32,.5); }
+
+/* Card image */
+.ucard-img { position:relative; height:196px; overflow:hidden; background:linear-gradient(135deg,#c7d2fe,#e0e7ff); }
+.ucard-img img { width:100%; height:100%; object-fit:cover; transition:transform .4s; }
+.ucard:hover .ucard-img img { transform:scale(1.05); }
+.ucard-img-ph { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:56px; background:linear-gradient(135deg,var(--c-navy),var(--c-navy2)); }
+.upill-country { position:absolute; bottom:12px; left:12px; background:#fff; border-radius:20px; padding:5px 12px; font-size:12px; font-weight:700; color:var(--c-navy); display:flex; align-items:center; gap:5px; box-shadow:var(--shadow-sm); }
+.upill-rank { position:absolute; top:12px; right:12px; background:var(--c-orange); color:#fff; border-radius:20px; padding:5px 12px; font-size:11.5px; font-weight:700; }
+.ubadge-match { position:absolute; top:12px; left:12px; background:#22c55e; color:#fff; border-radius:20px; padding:5px 12px; font-size:11px; font-weight:700; display:none; }
+.ucard.budget-match .ubadge-match { display:block; }
+
+/* Card body */
+.ucard-body { padding:22px; flex:1; display:flex; flex-direction:column; }
+.ucard-name { font-family:'Poppins',sans-serif; font-size:17px; font-weight:800; color:var(--c-navy); margin-bottom:5px; line-height:1.3; }
+.ucard-loc  { font-size:12.5px; color:var(--c-muted); margin-bottom:14px; display:flex; align-items:center; gap:4px; }
+
+/* Tags */
+.ucard-tags { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:16px; }
+.utag { padding:4px 10px; border-radius:6px; font-size:11.5px; font-weight:700; }
+.utag-g { background:#dcfce7; color:#15803d; }
+.utag-b { background:#dbeafe; color:#1e40af; }
+.utag-o { background:#ffedd5; color:#c2410c; }
+
+/* Stats grid (4indegree style) */
+.ucard-stats { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:18px; }
+.ustat { background:var(--c-bg); border-radius:var(--radius-sm); padding:9px 12px; border:1px solid var(--c-border); }
+.ustat-lbl { font-size:11px; color:var(--c-muted); margin-bottom:2px; }
+.ustat-val { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:var(--c-navy); }
+
+/* Fee accordion */
+.fee-accord { margin-bottom:14px; }
+.fee-tog { width:100%; display:flex; align-items:center; justify-content:space-between; padding:11px 14px; background:var(--c-bg); border:1.5px solid var(--c-border); border-radius:var(--radius-sm); cursor:pointer; font-size:13px; font-weight:700; color:var(--c-navy); transition:all .2s; }
+.fee-tog:hover { border-color:var(--c-orange); background:#fff8f2; }
+.fee-tog.open { border-color:var(--c-orange); border-bottom-left-radius:0; border-bottom-right-radius:0; background:#fff8f2; }
+.fee-tog .arr { transition:transform .25s; font-size:12px; }
+.fee-tog.open .arr { transform:rotate(180deg); }
+.fee-body { display:none; border:1.5px solid var(--c-orange); border-top:none; border-radius:0 0 var(--radius-sm) var(--radius-sm); overflow:hidden; }
+.fee-body.open { display:block; }
+.fee-tbl { width:100%; border-collapse:collapse; font-size:12.5px; }
+.fee-tbl th { background:var(--c-navy); color:#fff; padding:8px 10px; text-align:left; font-weight:600; }
+.fee-tbl td { padding:7px 10px; border-bottom:1px solid var(--c-border); }
+.fee-tbl tr:nth-child(even) td { background:#fafbff; }
+.fee-tbl tr.tot td { font-weight:700; color:var(--c-navy); background:#fff7ed!important; border-top:2px solid var(--c-orange); }
+.fee-note { font-size:11px; color:var(--c-muted); padding:8px 10px; background:#fffbf5; }
+
+/* Card actions */
+.ucard-act { display:flex; gap:10px; margin-top:auto; padding-top:14px; }
+.ucard-btn { flex:1; padding:11px; border-radius:var(--radius-sm); font-size:13px; font-weight:700; text-align:center; transition:all .2s; display:flex; align-items:center; justify-content:center; gap:5px; }
+.ucard-btn-p { background:var(--c-orange); color:#fff; }
+.ucard-btn-p:hover { background:var(--c-orange2); }
+.ucard-btn-s { border:2px solid var(--c-navy); color:var(--c-navy); }
+.ucard-btn-s:hover { background:var(--c-navy); color:#fff; }
+
+/* ============================================================
+   WHY SECTION
+============================================================ */
+.why-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:22px; }
+.why-card { background:#fff; border-radius:var(--radius-lg); padding:28px 22px; text-align:center; border:1.5px solid var(--c-border); transition:all .2s; }
+.why-card:hover { border-color:var(--c-orange); transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+.why-icon { width:60px; height:60px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:26px; margin:0 auto 16px; background:linear-gradient(135deg,#fff4eb,#ffe4c8); }
+.why-card h3 { font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; color:var(--c-navy); margin-bottom:7px; }
+.why-card p  { font-size:13px; color:var(--c-muted); line-height:1.65; }
+
+/* ============================================================
+   PROCESS STEPS
+============================================================ */
+.steps-wrap { display:flex; gap:0; max-width:1100px; margin:0 auto; position:relative; }
+.steps-wrap::before { content:''; position:absolute; top:35px; left:8%; right:8%; height:2px; background:linear-gradient(to right,var(--c-orange),var(--c-navy)); z-index:0; }
+.step { flex:1; text-align:center; position:relative; z-index:1; padding:0 8px; }
+.step-num { width:70px; height:70px; background:var(--c-navy); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-size:22px; font-weight:900; margin:0 auto 16px; border:4px solid var(--c-bg); box-shadow:0 4px 18px rgba(15,31,92,.25); }
+.step:nth-child(3) .step-num { background:var(--c-orange); }
+.step h4 { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:var(--c-navy); margin-bottom:6px; }
+.step p  { font-size:12.5px; color:var(--c-muted); }
+
+/* ============================================================
+   FAQ
+============================================================ */
+.faq-list { max-width:840px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
+.faq-item { background:#fff; border-radius:var(--radius-md); border:1.5px solid var(--c-border); overflow:hidden; }
+.faq-q { padding:18px 22px; font-size:15px; font-weight:700; color:var(--c-navy); cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:14px; transition:background .2s; }
+.faq-q:hover { background:#fffaf5; }
+.faq-q .fq-arr { font-size:13px; color:var(--c-orange); transition:transform .25s; flex-shrink:0; }
+.faq-q.open .fq-arr { transform:rotate(180deg); }
+.faq-a { display:none; padding:0 22px 18px; font-size:14.5px; color:var(--c-muted); line-height:1.78; border-top:1px solid var(--c-border); }
+.faq-a.open { display:block; }
+
+/* ============================================================
+   CONTACT SECTION
+============================================================ */
+.contact-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:52px; align-items:start; }
+.cinfo h2 { font-family:'Poppins',sans-serif; font-size:34px; font-weight:800; color:var(--c-navy); margin-bottom:12px; }
+.cinfo p  { color:var(--c-muted); margin-bottom:32px; font-size:15.5px; line-height:1.72; }
+.citem { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+.citem-ico { width:50px; height:50px; border-radius:14px; background:var(--c-orange); display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; box-shadow:0 6px 18px rgba(244,121,32,.3); }
+.citem-txt h4 { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:var(--c-navy); }
+.citem-txt p, .citem-txt a { font-size:13.5px; color:var(--c-muted); }
+.citem-txt a:hover { color:var(--c-orange); }
+.cform { background:#fff; border-radius:var(--radius-xl); padding:38px; box-shadow:var(--shadow-lg); border:1.5px solid var(--c-border); }
+.cf-title { font-family:'Poppins',sans-serif; font-size:21px; font-weight:800; color:var(--c-navy); margin-bottom:4px; }
+.cf-sub   { font-size:13px; color:var(--c-muted); margin-bottom:26px; }
+.fg { margin-bottom:15px; }
+.fg label { display:block; font-size:13px; font-weight:700; color:var(--c-navy); margin-bottom:6px; }
+.fg input, .fg select, .fg textarea { width:100%; padding:12px 14px; border:1.5px solid var(--c-border); border-radius:var(--radius-sm); font-size:14px; font-family:'Inter',sans-serif; color:var(--c-text); outline:none; transition:border .2s; background:#fafbff; }
+.fg input:focus, .fg select:focus, .fg textarea:focus { border-color:var(--c-orange); background:#fff; }
+.fg textarea { min-height:90px; resize:vertical; }
+.fg-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.cf-sub-btn { width:100%; padding:15px; background:var(--c-orange); color:#fff; border:none; border-radius:10px; font-family:'Poppins',sans-serif; font-size:15.5px; font-weight:700; cursor:pointer; transition:all .2s; margin-top:4px; }
+.cf-sub-btn:hover { background:var(--c-orange2); transform:translateY(-1px); box-shadow:0 8px 22px rgba(244,121,32,.35); }
+
+/* ============================================================
+   CONTACT BAR
+============================================================ */
+.cbar { background:linear-gradient(to right,#fff8f2,#fff); border-top:3px solid var(--c-orange); padding:26px 24px; }
+.cbar-in { max-width:1260px; margin:0 auto; display:flex; gap:28px; flex-wrap:wrap; justify-content:center; align-items:center; }
+.cbar-item { display:flex; align-items:center; gap:14px; }
+.cbar-ico { width:46px; height:46px; border-radius:12px; background:var(--c-orange); display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0; }
+.cbar-txt h4 { font-family:'Poppins',sans-serif; font-size:13px; font-weight:700; color:var(--c-navy); }
+.cbar-txt a, .cbar-txt p { font-size:13px; color:var(--c-muted); }
+.cbar-txt a:hover { color:var(--c-orange); }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+footer { background:#080f38; color:rgba(255,255,255,.65); padding:56px 24px 24px; }
+.footer-grid { max-width:1260px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:44px; margin-bottom:44px; }
+.footer-brand p { font-size:13px; line-height:1.82; color:rgba(255,255,255,.48); margin-top:16px; }
+.footer-name { font-family:'Poppins',sans-serif; font-size:21px; font-weight:900; }
+.footer-name .fn1 { color:#fff; }
+.footer-name .fn2 { color:var(--c-orange); }
+.fc h4 { font-family:'Poppins',sans-serif; font-size:13.5px; font-weight:700; color:#fff; margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid rgba(244,121,32,.35); }
+.fc ul { list-style:none; }
+.fc li { margin-bottom:9px; }
+.fc a  { color:rgba(255,255,255,.5); font-size:13px; transition:color .2s; }
+.fc a:hover { color:var(--c-orange); }
+.footer-bottom { max-width:1260px; margin:0 auto; border-top:1px solid rgba(255,255,255,.09); padding-top:22px; display:flex; justify-content:space-between; align-items:center; font-size:12px; color:rgba(255,255,255,.3); flex-wrap:wrap; gap:8px; }
+
+/* ============================================================
+   WHATSAPP FLOAT
+============================================================ */
+.wa-float { position:fixed; bottom:26px; right:26px; z-index:999; width:58px; height:58px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; box-shadow:0 4px 20px rgba(37,211,102,.55); animation:wap 2.4s infinite; }
+@keyframes wap { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.55)}50%{box-shadow:0 4px 34px rgba(37,211,102,.85)} }
+
+/* ============================================================
+   ADMIN PANEL (hidden from public — password protected)
+============================================================ */
+#admin-overlay { display:none; position:fixed; inset:0; z-index:9999; background:rgba(8,15,56,.96); backdrop-filter:blur(8px); overflow-y:auto; }
+#admin-overlay.show { display:flex; flex-direction:column; }
+.admin-bar { background:#0f1f5c; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--c-orange); position:sticky; top:0; z-index:2; }
+.admin-bar h2 { font-family:'Poppins',sans-serif; font-size:18px; font-weight:800; color:#fff; display:flex; align-items:center; gap:10px; }
+.admin-body { padding:28px; max-width:900px; margin:0 auto; width:100%; }
+.admin-section { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:24px; margin-bottom:22px; }
+.admin-section h3 { font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; color:var(--c-orange); margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+.admin-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.admin-fg label { display:block; font-size:12px; color:rgba(255,255,255,.6); margin-bottom:5px; }
+.admin-fg input, .admin-fg select, .admin-fg textarea { width:100%; padding:10px 12px; border-radius:7px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:#fff; font-size:13px; font-family:'Inter',sans-serif; outline:none; }
+.admin-fg textarea { min-height:70px; resize:vertical; }
+.admin-btn { padding:10px 22px; border-radius:7px; font-size:13px; font-weight:700; cursor:pointer; border:none; font-family:'Inter',sans-serif; transition:all .2s; }
+.admin-btn-p { background:var(--c-orange); color:#fff; }
+.admin-btn-s { background:rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.2); }
+.admin-note { font-size:12px; color:rgba(255,255,255,.45); margin-top:8px; }
+.uni-list { display:flex; flex-direction:column; gap:8px; max-height:280px; overflow-y:auto; }
+.uni-list-item { background:rgba(255,255,255,.06); border-radius:8px; padding:12px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.uni-list-item span { font-size:13px; color:#fff; }
+.uni-list-item small { font-size:11px; color:rgba(255,255,255,.45); }
+.uni-del { background:#ef4444; color:#fff; border:none; border-radius:5px; padding:4px 10px; font-size:11px; font-weight:700; cursor:pointer; }
+#admin-pw-screen { display:flex; align-items:center; justify-content:center; min-height:100vh; }
+.pw-box { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15); border-radius:18px; padding:36px; width:360px; text-align:center; }
+.pw-box h3 { font-family:'Poppins',sans-serif; font-size:20px; font-weight:800; color:#fff; margin-bottom:8px; }
+.pw-box p  { color:rgba(255,255,255,.55); font-size:13px; margin-bottom:22px; }
+.pw-box input { width:100%; padding:13px; border-radius:8px; border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.08); color:#fff; font-size:15px; text-align:center; letter-spacing:4px; font-family:'Inter',sans-serif; outline:none; margin-bottom:14px; }
+.pw-box .pw-btn { width:100%; padding:13px; background:var(--c-orange); color:#fff; border:none; border-radius:8px; font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; cursor:pointer; }
+.pw-err { color:#f87171; font-size:13px; margin-top:8px; }
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media(max-width:960px){
+  .hero-grid, .contact-grid { grid-template-columns:1fr; gap:36px; }
+  .hero h1 { font-size:38px; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .nav-menu { display:none; }
+  .steps-wrap { flex-wrap:wrap; gap:22px; }
+  .steps-wrap::before { display:none; }
+  .admin-row { grid-template-columns:1fr; }
+}
+@media(max-width:600px){
+  .hero h1 { font-size:30px; }
+  .footer-grid { grid-template-columns:1fr; }
+  .hero-btns { flex-direction:column; }
+  .fg-row { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+   WHATSAPP FLOAT
+============================================================ -->
+<a href="https://wa.me/919946454884" class="wa-float" title="WhatsApp Us">💬</a>
+
+<!-- ============================================================
+   SECTION 1 — CONTACT INFO  ← EDIT HERE
+   Change phone, email, address below
+============================================================ -->
+<script>
+const CONTACT = {
+  phone1:   "+91 9946 45 4884",
+  phone2:   "+91 9292 44 4884",
+  email:    "educallingllp@gmail.com",
+  address:  "Masjid Building, University Road, Kozhikode, Kerala",
+  whatsapp: "919946454884",
+  hours:    "Mon – Sat: 9:00 AM – 6:00 PM"
+};
+</script>
+
+<!-- ============================================================
+   SECTION 2 — UNIVERSITIES DATA  ← EDIT HERE
+   Add or edit universities. Each entry = one card on the website.
+   Fields: id, country, name, city, flag, emoji, img (URL),
+           fee_year (INR lakhs for budget filter),
+           fee_label, duration, ranking, accommodation, food,
+           indian_students, tags[], fee_table (rows + total),
+           fee_note, nmc, who
+============================================================ -->
+<script>
+const UNIVERSITIES = [
+
+  /* ══════════════ EGYPT ══════════════ */
+  {
+    id:"eg1", country:"egypt", flag:"🇪🇬", emoji:"🏛️",
+    name:"Al-Nahda University (NUB)",
+    city:"Beni Suef, Egypt",
+    img:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nahda_University.jpg/640px-Nahda_University.jpg",
+    fee_year:3.5,
+    fee_label:"₹3.5L/year",
+    duration:"6+1 Years",
+    ranking:"27th in Egypt",
+    accommodation:"₹10,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Private University"],
+    fee_table:[
+      ["Tuition Fee","$3,500/yr","~₹3.01L"],
+      ["Hostel","$1,200/yr","~₹1.03L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1)","$450","~₹0.39L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$6,890/yr","~₹5.93L/yr"],
+    fee_total6:["~$45,000 total","~₹38.7L total (7yr)"],
+    fee_note:"Founded 2006 | Largest private university in Upper Egypt | 9,000+ students | 1USD ≈ ₹86"
+  },
+  {
+    id:"eg2", country:"egypt", flag:"🇪🇬", emoji:"🎓",
+    name:"Ain Shams University",
+    city:"Cairo, Egypt",
+    img:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ain_Shams_University_1.jpg/640px-Ain_Shams_University_1.jpg",
+    fee_year:6.8,
+    fee_label:"$8,000/year — ₹6.8L",
+    duration:"7 Years",
+    ranking:"877 (World)",
+    accommodation:"₹5,000/month",
+    food:"₹9,000/month",
+    tags:["NMC Recognized","WHO Listed","Public University"],
+    fee_table:[
+      ["Tuition Fee","$8,000/yr","~₹6.88L"],
+      ["Hostel","$600/yr","~₹0.52L"],
+      ["Food & Mess","$1,080/yr","~₹0.93L"],
+      ["Visa & Reg (Yr1)","$500","~₹0.43L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$10,480/yr","~₹9.01L/yr"],
+    fee_total6:["~$70,460 total","~₹60.6L total (7yr)"],
+    fee_note:"Al Obour branch | Est. 1950 | One of Egypt's oldest & most prestigious public universities"
+  },
+  {
+    id:"eg3", country:"egypt", flag:"🇪🇬", emoji:"🏫",
+    name:"Cairo University — Faculty of Medicine",
+    city:"Giza, Cairo, Egypt",
+    img:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cairo_University_Faculty_of_Medicine.jpg/640px-Cairo_University_Faculty_of_Medicine.jpg",
+    fee_year:5,
+    fee_label:"₹5L/year",
+    duration:"6 Years",
+    ranking:"Top 500 QS",
+    accommodation:"₹11,000/month",
+    food:"₹15,000/month",
+    tags:["NMC Recognized","QS Ranked","Public University"],
+    fee_table:[
+      ["Tuition Fee","$4,500/yr","~₹3.87L"],
+      ["Hostel","$1,320/yr","~₹1.14L"],
+      ["Food & Mess","$1,800/yr","~₹1.55L"],
+      ["Visa & Reg (Yr1)","$550","~₹0.47L"],
+      ["Miscellaneous","$400/yr","~₹0.34L"],
+    ],
+    fee_total:["~$8,570/yr","~₹7.37L/yr"],
+    fee_total6:["~$49,520 total","~₹42.6L total"],
+    fee_note:"Africa's most prestigious university | Est. 1908 | QS ranked globally"
+  },
+
+  /* ══════════════ UZBEKISTAN ══════════════ */
+  {
+    id:"uz1", country:"uzbekistan", flag:"🇺🇿", emoji:"🕌",
+    name:"Bukhara State Medical Institute (BSMI)",
+    city:"Bukhara, Uzbekistan",
+    img:"https://4indegree.com/university-images/621f451e95dee73ca4f6e590.png",
+    fee_year:2.88,
+    fee_label:"$3,200/year — ₹2.88L",
+    duration:"6 Years",
+    ranking:"#1 in Uzbekistan 2024",
+    accommodation:"₹6,800/month",
+    food:"₹10,200/month",
+    tags:["NMC Recognized","WHO & FAIMER","#1 Uzbekistan 2024"],
+    fee_table:[
+      ["Tuition Fee","$3,200/yr","~₹2.75L"],
+      ["Hostel","$400/yr","~₹0.34L"],
+      ["Indian Mess (compulsory)","$1,200/yr","~₹1.03L"],
+      ["Visa & Reg (Yr1 only)","$500","~₹0.43L"],
+      ["Miscellaneous","$200/yr","~₹0.17L"],
+    ],
+    fee_total:["~$5,500/yr","~₹4.73L/yr"],
+    fee_total6:["~$30,500 total","~₹26.2L total"],
+    fee_note:"FMGE pass 47.83% (2024) | 500+ Indian students | Est.1990 | 4 Indian NMC coaching teachers on campus"
+  },
+  {
+    id:"uz2", country:"uzbekistan", flag:"🇺🇿", emoji:"🏥",
+    name:"Tashkent Medical Academy",
+    city:"Tashkent, Uzbekistan",
+    img:"https://4indegree.com/home/uni/mobile/64d727d521026f73949f718b_320x190.webp",
+    fee_year:3.2,
+    fee_label:"₹3.2L/year",
+    duration:"6 Years",
+    ranking:"QS: 351",
+    accommodation:"₹5,000/month",
+    food:"₹10,000/month",
+    tags:["NMC Recognized","WHO Listed","QS Rank: 351"],
+    fee_table:[
+      ["Tuition Fee","$3,500/yr","~₹3.01L"],
+      ["Hostel","$600/yr","~₹0.52L"],
+      ["Indian Mess (compulsory)","$1,200/yr","~₹1.03L"],
+      ["Visa & Reg (Yr1 only)","$550","~₹0.47L"],
+      ["Miscellaneous","$250/yr","~₹0.22L"],
+    ],
+    fee_total:["~$6,100/yr","~₹5.25L/yr"],
+    fee_total6:["~$33,650 total","~₹28.9L total"],
+    fee_note:"Capital city | Modern campus | 300+ Indian students | English medium"
+  },
+  {
+    id:"uz3", country:"uzbekistan", flag:"🇺🇿", emoji:"🕍",
+    name:"Samarkand State Medical University",
+    city:"Samarkand, Uzbekistan",
+    img:"https://4indegree.com/home/uni/mobile/66261fb59b2e6a75cbe2e020_320x190.webp",
+    fee_year:2.97,
+    fee_label:"₹2.97L/year",
+    duration:"6 Years",
+    ranking:"WR: 6355",
+    accommodation:"₹5,000/month",
+    food:"₹8,000/month",
+    tags:["NMC Recognized","WHO Listed","Est. 1930"],
+    fee_table:[
+      ["Tuition Fee","$3,300/yr","~₹2.84L"],
+      ["Hostel","$600/yr","~₹0.52L"],
+      ["Indian Mess (compulsory)","$1,200/yr","~₹1.03L"],
+      ["Visa & Reg (Yr1 only)","$500","~₹0.43L"],
+      ["Miscellaneous","$200/yr","~₹0.17L"],
+    ],
+    fee_total:["~$5,800/yr","~₹4.99L/yr"],
+    fee_total6:["~$31,800 total","~₹27.3L total"],
+    fee_note:"1600+ Indian students | Largest Indian community in Uzbekistan | Historic city"
+  },
+
+  /* ══════════════ KAZAKHSTAN ══════════════ */
+  {
+    id:"kz1", country:"kazakhstan", flag:"🇰🇿", emoji:"🏙️",
+    name:"Al-Farabi Kazakh National University",
+    city:"Almaty, Kazakhstan",
+    img:"https://4indegree.com/university-images/621f45b095dee73ca4f6e591.png",
+    fee_year:4.5,
+    fee_label:"$5,000/year — ₹4.5L",
+    duration:"6 Years",
+    ranking:"WR: 1666",
+    accommodation:"₹10,000/month",
+    food:"₹10,000/month",
+    tags:["NMC Recognized","WHO Listed","WR: 1,666"],
+    fee_table:[
+      ["Tuition Fee","$5,000/yr","~₹4.30L"],
+      ["Hostel","$800/yr","~₹0.69L"],
+      ["Food & Mess","$1,200/yr","~₹1.03L"],
+      ["Visa & Reg (Yr1 only)","$600","~₹0.52L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$7,900/yr","~₹6.79L/yr"],
+    fee_total6:["~$43,700 total","~₹37.6L total"],
+    fee_note:"400+ Indian students | Top-ranked university in Kazakhstan | Almaty city"
+  },
+  {
+    id:"kz2", country:"kazakhstan", flag:"🇰🇿", emoji:"🏛️",
+    name:"Asfendiyarov Kazakh National Medical University",
+    city:"Almaty, Kazakhstan",
+    img:"https://4indegree.com/university-images/621f46b595dee73ca4f6e592.png",
+    fee_year:5.74,
+    fee_label:"$6,380/year — ₹5.74L",
+    duration:"6 Years",
+    ranking:"WR: 8238",
+    accommodation:"₹10,000/month",
+    food:"₹10,000/month",
+    tags:["NMC Recognized","WHO Listed","Medical Specialist Uni"],
+    fee_table:[
+      ["Tuition Fee","$6,380/yr","~₹5.49L"],
+      ["Hostel","$800/yr","~₹0.69L"],
+      ["Food & Mess","$1,200/yr","~₹1.03L"],
+      ["Visa & Reg (Yr1 only)","$600","~₹0.52L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$9,280/yr","~₹7.98L/yr"],
+    fee_total6:["~$51,280 total","~₹44.1L total"],
+    fee_note:"800+ Indian students | Dedicated medical university | English medium"
+  },
+  {
+    id:"kz3", country:"kazakhstan", flag:"🇰🇿", emoji:"🌄",
+    name:"South Kazakhstan Medical Academy",
+    city:"Shymkent, Kazakhstan",
+    img:"https://4indegree.com/university-images/621f5a5c95dee73ca4f6e5a1.png",
+    fee_year:3.74,
+    fee_label:"$4,400/year — ₹3.74L",
+    duration:"6 Years",
+    ranking:"WR: 20701",
+    accommodation:"₹6,800/month",
+    food:"₹8,500/month",
+    tags:["NMC Recognized","WHO Listed","Affordable"],
+    fee_table:[
+      ["Tuition Fee","$4,400/yr","~₹3.78L"],
+      ["Hostel","$600/yr","~₹0.52L"],
+      ["Food & Mess","$1,020/yr","~₹0.88L"],
+      ["Visa & Reg (Yr1 only)","$550","~₹0.47L"],
+      ["Miscellaneous","$250/yr","~₹0.22L"],
+    ],
+    fee_total:["~$6,820/yr","~₹5.87L/yr"],
+    fee_total6:["~$37,020 total","~₹31.8L total"],
+    fee_note:"1000+ Indian students | Affordable option in Kazakhstan | Shymkent city"
+  },
+
+  /* ══════════════ GEORGIA ══════════════ */
+  {
+    id:"ge1", country:"georgia", flag:"🇬🇪", emoji:"🏛️",
+    name:"The University of Georgia — Tbilisi",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/621f3da695dee73ca4f6e58c.png",
+    fee_year:5.85,
+    fee_label:"$6,500/year — ₹5.85L",
+    duration:"6 Years",
+    ranking:"WR: 2990",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","ECFMG Listed","WR: 2,990"],
+    fee_table:[
+      ["Tuition Fee","$6,500/yr","~₹5.59L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$10,320/yr","~₹8.88L/yr"],
+    fee_total6:["~$57,320 total","~₹49.3L total"],
+    fee_note:"1000+ Indian students | European quality education | Visa-free for Indians"
+  },
+  {
+    id:"ge2", country:"georgia", flag:"🇬🇪", emoji:"🏫",
+    name:"Akaki Tsereteli State University",
+    city:"Kutaisi, Georgia",
+    img:"https://4indegree.com/university-images/621f408695dee73ca4f6e58d.png",
+    fee_year:3.8,
+    fee_label:"$4,500/year — ₹3.8L",
+    duration:"6 Years",
+    ranking:"WR: 8812",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Affordable"],
+    fee_table:[
+      ["Tuition Fee","$4,500/yr","~₹3.87L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$8,320/yr","~₹7.16L/yr"],
+    fee_total6:["~$46,320 total","~₹39.8L total"],
+    fee_note:"400+ Indian students | Affordable Georgia option | Kutaisi city"
+  },
+  {
+    id:"ge3", country:"georgia", flag:"🇬🇪", emoji:"⛪",
+    name:"Petre Shotadze Tbilisi Medical Academy",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/621f41d395dee73ca4f6e58e.png",
+    fee_year:6.3,
+    fee_label:"$7,000/year — ₹6.3L",
+    duration:"6 Years",
+    ranking:"WR: 14781",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Tbilisi"],
+    fee_table:[
+      ["Tuition Fee","$7,000/yr","~₹6.02L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$10,820/yr","~₹9.31L/yr"],
+    fee_total6:["~$59,920 total","~₹51.5L total"],
+    fee_note:"1000+ Indian students | Dedicated medical academy | Capital city"
+  },
+  {
+    id:"ge4", country:"georgia", flag:"🇬🇪", emoji:"🎓",
+    name:"David Tvildiani Medical University",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/621f446195dee73ca4f6e58f.png",
+    fee_year:5.1,
+    fee_label:"$6,000/year — ₹5.1L",
+    duration:"6 Years",
+    ranking:"WR: 17800",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Tbilisi"],
+    fee_table:[
+      ["Tuition Fee","$6,000/yr","~₹5.16L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$9,820/yr","~₹8.45L/yr"],
+    fee_total6:["~$54,520 total","~₹46.9L total"],
+    fee_note:"400+ Indian students | Specialized medical university | Tbilisi"
+  },
+  {
+    id:"ge5", country:"georgia", flag:"🇬🇪", emoji:"🏰",
+    name:"Caucasus University — Tbilisi",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/home/uni/mobile/62258f82b2f105573cc4b2c7_320x190.webp",
+    fee_year:5.4,
+    fee_label:"$6,000/year — ₹5.4L",
+    duration:"6 Years",
+    ranking:"WR: 9144",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","WR: 9,144"],
+    fee_table:[
+      ["Tuition Fee","$6,000/yr","~₹5.16L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$9,820/yr","~₹8.45L/yr"],
+    fee_total6:["~$54,820 total","~₹47.2L total"],
+    fee_note:"500+ Indian students | Modern campus | Strong research culture"
+  },
+  {
+    id:"ge6", country:"georgia", flag:"🇬🇪", emoji:"🌇",
+    name:"Tbilisi State Medical University",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/623192aad10cba4c88d10157.png",
+    fee_year:7.2,
+    fee_label:"$8,000/year — ₹7.2L",
+    duration:"6 Years",
+    ranking:"WR: 14718",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Prestigious"],
+    fee_table:[
+      ["Tuition Fee","$8,000/yr","~₹6.88L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$11,820/yr","~₹10.17L/yr"],
+    fee_total6:["~$66,320 total","~₹57.0L total"],
+    fee_note:"2000+ Indian students | Most popular Georgia university | State institution"
+  },
+  {
+    id:"ge7", country:"georgia", flag:"🇬🇪", emoji:"🌊",
+    name:"Batumi Shota Rustaveli State University",
+    city:"Batumi, Georgia",
+    img:"https://4indegree.com/university-images/621f5b3395dee73ca4f6e5a2.png",
+    fee_year:4.2,
+    fee_label:"$5,000/year — ₹4.2L",
+    duration:"6 Years",
+    ranking:"WR: 5672",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Batumi Seaside"],
+    fee_table:[
+      ["Tuition Fee","$5,000/yr","~₹4.30L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$8,820/yr","~₹7.59L/yr"],
+    fee_total6:["~$48,820 total","~₹42.0L total"],
+    fee_note:"1500+ Indian students | Beautiful Black Sea city | Good USMLE prep"
+  },
+  {
+    id:"ge8", country:"georgia", flag:"🇬🇪", emoji:"🏛️",
+    name:"Ivane Javakhishvili Tbilisi State University",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/6231a19ed10cba4c88d10158.png",
+    fee_year:6.8,
+    fee_label:"$8,000/year — ₹6.8L",
+    duration:"6 Years",
+    ranking:"WR: 1691",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WR: 1,691","State University"],
+    fee_table:[
+      ["Tuition Fee","$8,000/yr","~₹6.88L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$11,820/yr","~₹10.17L/yr"],
+    fee_total6:["~$66,320 total","~₹57.0L total"],
+    fee_note:"250+ Indian students | Oldest & most prestigious Georgia university | WR 1,691"
+  },
+  {
+    id:"ge9", country:"georgia", flag:"🇬🇪", emoji:"🎓",
+    name:"Ilia State University",
+    city:"Tbilisi, Georgia",
+    img:"https://4indegree.com/university-images/628600052b88fe0c304af623.png",
+    fee_year:5.27,
+    fee_label:"$6,200/year — ₹5.27L",
+    duration:"6 Years",
+    ranking:"WR: 3424",
+    accommodation:"₹14,000/month",
+    food:"₹12,000/month",
+    tags:["NMC Recognized","WHO Listed","Research Focused"],
+    fee_table:[
+      ["Tuition Fee","$6,200/yr","~₹5.33L"],
+      ["Hostel","$1,680/yr","~₹1.44L"],
+      ["Food & Mess","$1,440/yr","~₹1.24L"],
+      ["Visa & Reg (Yr1 only)","$400","~₹0.34L"],
+      ["Miscellaneous","$300/yr","~₹0.26L"],
+    ],
+    fee_total:["~$10,020/yr","~₹8.62L/yr"],
+    fee_total6:["~$55,720 total","~₹47.9L total"],
+    fee_note:"600+ Indian students | Research-focused | Central Tbilisi campus"
+  },
+
+  /* ══════════════ BULGARIA ══════════════ */
+  {
+    id:"bg1", country:"bulgaria", flag:"🇧🇬", emoji:"🏰",
+    name:"Medical University of Sofia",
+    city:"Sofia, Bulgaria (EU)",
+    img:"https://4indegree.com/university-images/6280a6bffedbd8ab35966488.png",
+    fee_year:10,
+    fee_label:"€10,000/year — ₹10L",
+    duration:"6 Years",
+    ranking:"WR: 2916",
+    accommodation:"₹17,500/month",
+    food:"₹17,500/month",
+    tags:["EU Degree","NMC Recognized","WR: 2,916"],
+    fee_table:[
+      ["Tuition Fee","€10,000/yr","~₹9.10L"],
+      ["Hostel","€2,400/yr","~₹2.18L"],
+      ["Food & Mess","€2,100/yr","~₹1.91L"],
+      ["Visa & Reg (Yr1 only)","€600","~₹0.55L"],
+      ["Miscellaneous","€500/yr","~₹0.46L"],
+    ],
+    fee_total:["~€15,600/yr","~₹14.2L/yr"],
+    fee_total6:["~€91,600 total","~₹83.4L total"],
+    fee_note:"500+ Indian students | Capital city | EU degree valid in 27 countries | 1EUR ≈ ₹91"
+  },
+  {
+    id:"bg2", country:"bulgaria", flag:"🇧🇬", emoji:"🌺",
+    name:"Medical University – Plovdiv",
+    city:"Plovdiv, Bulgaria (EU)",
+    img:"https://4indegree.com/university-images/6280aa2dfedbd8ab35966489.png",
+    fee_year:9.9,
+    fee_label:"€9,000/year — ₹9.9L",
+    duration:"6 Years",
+    ranking:"WR: 3587",
+    accommodation:"₹17,500/month",
+    food:"₹17,500/month",
+    tags:["EU Degree","NMC Recognized","WR: 3,587"],
+    fee_table:[
+      ["Tuition Fee","€9,000/yr","~₹8.19L"],
+      ["Hostel","€2,400/yr","~₹2.18L"],
+      ["Food & Mess","€2,100/yr","~₹1.91L"],
+      ["Visa & Reg (Yr1 only)","€600","~₹0.55L"],
+      ["Miscellaneous","€500/yr","~₹0.46L"],
+    ],
+    fee_total:["~€14,600/yr","~₹13.3L/yr"],
+    fee_total6:["~€85,600 total","~₹77.9L total"],
+    fee_note:"500+ Indian students | Plovdiv — cultural capital of Bulgaria | EU degree"
+  },
+  {
+    id:"bg3", country:"bulgaria", flag:"🇧🇬", emoji:"🌊",
+    name:"Medical University of Varna",
+    city:"Varna, Bulgaria (EU)",
+    img:"https://4indegree.com/home/uni/mobile/6280ab6ffedbd8ab3596648a_320x190.webp",
+    fee_year:10,
+    fee_label:"€10,000/year — ₹10L",
+    duration:"6 Years",
+    ranking:"WR: 3350",
+    accommodation:"₹17,500/month",
+    food:"₹17,500/month",
+    tags:["EU Degree","NMC Recognized","WR: 3,350"],
+    fee_table:[
+      ["Tuition Fee","€10,000/yr","~₹9.10L"],
+      ["Hostel","€2,400/yr","~₹2.18L"],
+      ["Food & Mess","€2,100/yr","~₹1.91L"],
+      ["Visa & Reg (Yr1 only)","€600","~₹0.55L"],
+      ["Miscellaneous","€500/yr","~₹0.46L"],
+    ],
+    fee_total:["~€15,600/yr","~₹14.2L/yr"],
+    fee_total6:["~€91,600 total","~₹83.4L total"],
+    fee_note:"400+ Indian students | Black Sea coastal city | EU degree valid globally"
+  },
+  {
+    id:"bg4", country:"bulgaria", flag:"🇧🇬", emoji:"🏛️",
+    name:"Medical University of Pleven",
+    city:"Pleven, Bulgaria (EU)",
+    img:"https://4indegree.com/university-images/621f313b95dee73ca4f6e586.png",
+    fee_year:9.9,
+    fee_label:"€9,000/year — ₹9.9L",
+    duration:"6 Years",
+    ranking:"WR: 9338",
+    accommodation:"₹17,500/month",
+    food:"₹17,500/month",
+    tags:["EU Degree","NMC Recognized","WR: 9,338"],
+    fee_table:[
+      ["Tuition Fee","€9,000/yr","~₹8.19L"],
+      ["Hostel","€2,400/yr","~₹2.18L"],
+      ["Food & Mess","€2,100/yr","~₹1.91L"],
+      ["Visa & Reg (Yr1 only)","€600","~₹0.55L"],
+      ["Miscellaneous","€500/yr","~₹0.46L"],
+    ],
+    fee_total:["~€14,600/yr","~₹13.3L/yr"],
+    fee_total6:["~€85,600 total","~₹77.9L total"],
+    fee_note:"200+ Indian students | Affordable EU medical degree | Strong clinical training"
+  }
+
+]; // END UNIVERSITIES ARRAY
+</script>
+
+<!-- ============================================================
+   HTML STRUCTURE
+============================================================ -->
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="tb-left">
+      <div class="tb-item">📍 <span id="tb-addr"></span></div>
+    </div>
+    <div class="tb-right">
+      <div class="tb-item">📞 <a id="tb-p1" href="#"></a></div>
+      <div class="tb-item">📞 <a id="tb-p2" href="#"></a></div>
+      <div class="tb-item">✉️ <a id="tb-em" href="#"></a></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-in">
+    <a href="#home" class="logo-wrap">
+      <svg class="logo-icon" viewBox="0 0 46 46" fill="none">
+        <path d="M6 30L19 42L40 8" stroke="#0f1f5c" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 42L40 8" stroke="url(#g0)" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="39" cy="8" r="5.5" fill="#f47920"/>
+        <defs><linearGradient id="g0" x1="19" y1="42" x2="40" y2="8"><stop stop-color="#1d9bf0"/><stop offset="1" stop-color="#f47920"/></linearGradient></defs>
+      </svg>
+      <div class="logo-text">
+        <div class="logo-name"><span class="ln1">Edu</span><span class="ln2"> Calling</span></div>
+        <div class="logo-sub">GLOBAL LLP</div>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" class="act">Home</a></li>
+      <li><a href="#universities">Universities</a></li>
+      <li><a href="#budget">Budget</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a id="nav-call" href="#" class="btn btn-outline" style="padding:9px 18px;font-size:13px;">📞 Call Now</a>
+      <a href="#contact" class="btn btn-primary" style="padding:9px 18px;font-size:13px;">Free Counselling</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================ HERO -->
+<section class="hero" id="home">
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-grid container">
+    <div>
+      <div class="hero-pill">✈️ Kerala's Most Trusted MBBS Abroad Consultancy</div>
+      <h1 class="f-pop">Is Becoming a Doctor<br/><em>Your Dream?</em></h1>
+      <p class="hero-desc">MBBS abroad for Indian students is more accessible than ever — find the best NMC & WHO recognised medical universities across Egypt, Uzbekistan, Kazakhstan, Georgia & Bulgaria.</p>
+      <div class="hero-btns">
+        <a href="#universities" class="btn btn-primary btn-lg">🎓 Explore Universities</a>
+        <a href="#contact" class="btn btn-white btn-lg">📋 Free Counselling</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-n">500+</div><div class="hstat-l">Students Placed</div></div>
+        <div class="hstat"><div class="hstat-n">98%</div><div class="hstat-l">Visa Success</div></div>
+        <div class="hstat"><div class="hstat-n" id="hero-uni-count">21</div><div class="hstat-l">Universities</div></div>
+        <div class="hstat"><div class="hstat-n">5</div><div class="hstat-l">Countries</div></div>
+      </div>
+    </div>
+    <!-- SEARCH CARD -->
+    <div class="search-card">
+      <div class="sc-title">🎯 Find Your Ideal University</div>
+      <div class="sc-label">Which country do you want to study?</div>
+      <select class="sc-select" id="hero-country">
+        <option value="all">🌍 All Countries</option>
+        <option value="egypt">🇪🇬 Egypt</option>
+        <option value="uzbekistan">🇺🇿 Uzbekistan</option>
+        <option value="kazakhstan">🇰🇿 Kazakhstan</option>
+        <option value="georgia">🇬🇪 Georgia</option>
+        <option value="bulgaria">🇧🇬 Bulgaria</option>
+      </select>
+      <div class="sc-label">What is your budget (Course Fee / year)?</div>
+      <div class="sc-val" id="sc-val">₹5 Lakhs/year</div>
+      <input type="range" class="sc-slider" id="sc-slider" min="2" max="11" step="0.5" value="5" oninput="scSlide(this.value)"/>
+      <div class="sc-marks"><span>₹2L</span><span>₹4L</span><span>₹6L</span><span>₹8L</span><span>₹11L</span></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;" onclick="heroSearch()">🔍 Search Universities</button>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="mq-track">
+    <span class="mq-item">✅ NMC &amp; WHO Recognized</span>
+    <span class="mq-item">🇪🇬 Egypt — 3 Universities</span>
+    <span class="mq-item">🇺🇿 Uzbekistan — 3 Universities</span>
+    <span class="mq-item">🇰🇿 Kazakhstan — 3 Universities</span>
+    <span class="mq-item">🇬🇪 Georgia — 9 Universities</span>
+    <span class="mq-item">🇧🇬 Bulgaria — 4 Universities (EU Degree)</span>
+    <span class="mq-item">💰 No Donation Fee</span>
+    <span class="mq-item">📞 +91 9946 45 4884</span>
+    <span class="mq-item">🎓 500+ Students Placed</span>
+    <span class="mq-item">✅ NMC &amp; WHO Recognized</span>
+    <span class="mq-item">🇪🇬 Egypt — 3 Universities</span>
+    <span class="mq-item">🇺🇿 Uzbekistan — 3 Universities</span>
+    <span class="mq-item">🇰🇿 Kazakhstan — 3 Universities</span>
+    <span class="mq-item">🇬🇪 Georgia — 9 Universities</span>
+    <span class="mq-item">🇧🇬 Bulgaria — 4 Universities (EU Degree)</span>
+    <span class="mq-item">💰 No Donation Fee</span>
+    <span class="mq-item">📞 +91 9946 45 4884</span>
+    <span class="mq-item">🎓 500+ Students Placed</span>
+  </div>
+</div>
+
+<!-- ============================================================ UNIVERSITIES -->
+<section class="section" id="universities" style="background:var(--c-bg);">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-ey">Top Medical Universities</div>
+      <h2 class="sec-title f-pop">All Recommended Universities for 2025</h2>
+      <p class="sec-desc">Browse all NMC &amp; WHO recognised universities across 5 countries. Use the budget slider to find universities that match your affordability.</p>
+      <div class="sec-bar"></div>
+    </div>
+
+    <!-- Country Tabs -->
+    <div class="ctabs" id="ctabs">
+      <button class="ctab act" onclick="filterCountry('all',this)"><span class="fl">🌍</span> All Countries</button>
+      <button class="ctab" onclick="filterCountry('egypt',this)"><span class="fl">🇪🇬</span> Egypt</button>
+      <button class="ctab" onclick="filterCountry('uzbekistan',this)"><span class="fl">🇺🇿</span> Uzbekistan</button>
+      <button class="ctab" onclick="filterCountry('kazakhstan',this)"><span class="fl">🇰🇿</span> Kazakhstan</button>
+      <button class="ctab" onclick="filterCountry('georgia',this)"><span class="fl">🇬🇪</span> Georgia</button>
+      <button class="ctab" onclick="filterCountry('bulgaria',this)"><span class="fl">🇧🇬</span> Bulgaria</button>
+    </div>
+
+    <!-- Sort bar -->
+    <div class="sort-bar">
+      <span>Sort by:</span>
+      <button class="sort-btn act" onclick="sortBy('fee',this)">Course Fee</button>
+      <button class="sort-btn" onclick="sortBy('accommodation',this)">Accommodation</button>
+      <button class="sort-btn" onclick="sortBy('food',this)">Food</button>
+      <div class="result-count" id="result-count">Showing 22 universities</div>
+    </div>
+
+    <!-- Grid (built by JS) -->
+    <div class="unis-grid" id="unis-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================ BUDGET FILTER -->
+<div class="budget-sec" id="budget">
+  <div class="budget-wrap container">
+    <div class="sec-ey" style="color:#ffb36b;">Smart Search</div>
+    <h2 class="f-pop">Still Deciding Between Universities?</h2>
+    <p>Choose your preferred study destination and set your budget to instantly explore matching universities, tuition fees, food and accommodation costs, and much more.</p>
+    <div class="budget-box">
+      <div class="slider-row">
+        <label>Budget (Course Fee/year)</label>
+        <div class="big-val" id="big-val">₹5 Lakhs/year</div>
+      </div>
+      <input type="range" class="big-slider" id="big-slider" min="2" max="11" step="0.5" value="5" oninput="bigSlide(this.value)"/>
+      <div class="big-marks">
+        <span>₹2L (Most Affordable)</span><span>₹4L</span><span>₹6L</span><span>₹8L</span><span>₹11L+ (EU/Premium)</span>
+      </div>
+      <div class="match-result">
+        <div class="match-num" id="match-num">— Universities Match</div>
+        <div class="match-desc" id="match-desc">Move the slider to see matching universities</div>
+        <button class="btn btn-primary btn-lg" onclick="document.getElementById('universities').scrollIntoView({behavior:'smooth'})">View Matching Universities ↓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ WHY US -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-ey">Why EduCalling?</div>
+      <h2 class="sec-title f-pop">Your Complete MBBS Abroad Partner</h2>
+      <p class="sec-desc">End-to-end support from your first counselling session to landing in your dream university.</p>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">🏆</div><h3>10+ Years Experience</h3><p>Trusted by 500+ students from Kerala to study MBBS abroad at NMC-recognised universities.</p></div>
+      <div class="why-card"><div class="why-icon">✅</div><h3>98% Visa Success</h3><p>Our expert visa counsellors ensure maximum success rate for student visa applications.</p></div>
+      <div class="why-card"><div class="why-icon">💰</div><h3>No Donation Policy</h3><p>We only recommend universities that charge absolutely no capitation or donation fee.</p></div>
+      <div class="why-card"><div class="why-icon">📋</div><h3>Full Documentation</h3><p>We handle all SOP, LOR, attestation, NEET documentation and visa paperwork for you.</p></div>
+      <div class="why-card"><div class="why-icon">🎓</div><h3>NMC / WHO Only</h3><p>Every university we recommend is fully NMC and WHO recognised — no exceptions.</p></div>
+      <div class="why-card"><div class="why-icon">✈️</div><h3>Pre-Departure Support</h3><p>Accommodation, travel, banking and complete pre-departure briefing before you fly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PROCESS -->
+<section class="section" style="background:var(--c-bg);">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-ey">Simple 5-Step Process</div>
+      <h2 class="sec-title f-pop">Your Journey in 5 Easy Steps</h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="steps-wrap">
+      <div class="step"><div class="step-num">1</div><h4>Free Counselling</h4><p>Personalised session with our MBBS expert</p></div>
+      <div class="step"><div class="step-num">2</div><h4>University Selection</h4><p>Choose based on budget, country &amp; rank</p></div>
+      <div class="step"><div class="step-num">3</div><h4>Application &amp; Docs</h4><p>We prepare &amp; submit your full application</p></div>
+      <div class="step"><div class="step-num">4</div><h4>Visa Processing</h4><p>Complete visa documentation &amp; support</p></div>
+      <div class="step"><div class="step-num">5</div><h4>Fly &amp; Study ✈️</h4><p>Pre-departure briefing &amp; bon voyage!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-ey">Common Questions</div>
+      <h2 class="sec-title f-pop">Frequently Asked Questions</h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">Which country is best for MBBS abroad for Kerala students?<span class="fq-arr">▼</span></div><div class="faq-a">Egypt and Uzbekistan are most popular for Kerala students due to affordability (₹3–4L/year), NMC recognition, English-medium teaching and large Indian student communities. Georgia offers European quality with visa-free entry for Indians. Kazakhstan is a strong mid-range option. Bulgaria provides an EU-recognised degree. Contact EduCalling for personalised guidance.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">How much does MBBS abroad cost in total?<span class="fq-arr">▼</span></div><div class="faq-a">Total MBBS cost (tuition + hostel + food + visa) varies: Uzbekistan ₹26–29L, Egypt ₹38–61L, Kazakhstan ₹32–44L, Georgia ₹39–57L, Bulgaria ₹78–84L (EU degree). Claims of ₹10L MBBS programs are likely scams.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">Is NEET required for MBBS abroad?<span class="fq-arr">▼</span></div><div class="faq-a">Most foreign medical universities don't require a NEET score for admission. However, to practise medicine in India after your MBBS abroad, you must qualify the FMGE/NMC screening exam. NEET qualifying score in 2025 was 144 (General) and 113 (OBC/SC/ST). NEET scores are valid for 3 years.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">Are all universities NMC and WHO recognised?<span class="fq-arr">▼</span></div><div class="faq-a">Yes — EduCalling Global LLP exclusively recommends NMC and WHO recognised universities. All 22 universities listed on this website (across Egypt, Uzbekistan, Kazakhstan, Georgia and Bulgaria) are fully approved by NMC and WHO, ensuring your degree is valid for FMGE and international practice.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">What is the FMGE pass rate for these universities?<span class="fq-arr">▼</span></div><div class="faq-a">Bukhara State Medical Institute had the best FMGE pass rate in Uzbekistan in 2024 — 47.83%. Samarkand State Medical University also performs well. Georgia universities like Tbilisi State Medical University have growing FMGE pass rates. EduCalling provides dedicated FMGE preparation guidance to all students.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faqToggle(this)">What is the advantage of a Bulgaria EU degree?<span class="fq-arr">▼</span></div><div class="faq-a">A Bulgaria EU-recognised medical degree allows you to practise medicine in all 27 European Union countries after completing EU licensing requirements (e.g., PLAB in UK, USMLE in USA, or working directly in EU). It is also NMC recognised for returning to India. Bulgaria offers European-standard education at a much lower cost than UK, USA or Germany.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CONTACT -->
+<section class="section" id="contact" style="background:var(--c-bg);">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="sec-ey">Get In Touch</div>
+        <h2 class="f-pop">Book Your Free<br/>Counselling Session</h2>
+        <p>Our expert counsellors will help you choose the right university and country based on your budget, academic profile, NEET score and career goals. No obligation, completely free.</p>
+        <div class="citem"><div class="citem-ico">📞</div><div class="citem-txt"><h4>Call / WhatsApp</h4><a id="ci-p1" href="#">—</a> | <a id="ci-p2" href="#">—</a></div></div>
+        <div class="citem"><div class="citem-ico">📧</div><div class="citem-txt"><h4>Email Us</h4><a id="ci-em" href="#">—</a></div></div>
+        <div class="citem"><div class="citem-ico">📍</div><div class="citem-txt"><h4>Visit Our Office</h4><p id="ci-addr">—</p></div></div>
+        <div class="citem"><div class="citem-ico">🕐</div><div class="citem-txt"><h4>Office Hours</h4><p id="ci-hrs">—</p></div></div>
+      </div>
+      <div class="cform">
+        <div class="cf-title">Apply for Free Counselling</div>
+        <div class="cf-sub">Fill in your details — our expert will call you within 24 hours.</div>
+        <div class="fg-row">
+          <div class="fg"><label>Full Name *</label><input type="text" placeholder="Your full name"/></div>
+          <div class="fg"><label>Mobile / WhatsApp *</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        </div>
+        <div class="fg-row">
+          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="fg"><label>City / District</label><input type="text" placeholder="Kozhikode"/></div>
+        </div>
+        <div class="fg-row">
+          <div class="fg"><label>Preferred Country *</label>
+            <select>
+              <option>Select Country</option>
+              <option>🇪🇬 Egypt</option>
+              <option>🇺🇿 Uzbekistan</option>
+              <option>🇰🇿 Kazakhstan</option>
+              <option>🇬🇪 Georgia</option>
+              <option>🇧🇬 Bulgaria (EU Degree)</option>
+              <option>Help me decide</option>
+            </select>
+          </div>
+          <div class="fg"><label>Budget (Course Fee / year)</label>
+            <select>
+              <option>₹2–3 Lakhs/year</option>
+              <option>₹3–4 Lakhs/year</option>
+              <option>₹4–5 Lakhs/year</option>
+              <option>₹5–6 Lakhs/year</option>
+              <option>₹6–8 Lakhs/year</option>
+              <option>Above ₹8 Lakhs/year</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Education Level</label>
+          <select>
+            <option>NEET Preparation</option>
+            <option>12th Bio Science</option>
+            <option>12th Computer Science</option>
+            <option>11th</option>
+            <option>10th</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fg"><label>NEET Score (if applicable)</label><input type="text" placeholder="e.g. 450 or N/A"/></div>
+        <button class="cf-sub-btn">Get FREE Consultation 🎓</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="cbar">
+  <div class="cbar-in">
+    <div class="cbar-item"><div class="cbar-ico">📞</div><div class="cbar-txt"><h4>Call / WhatsApp</h4><a id="cb-p1" href="#">—</a> &nbsp;|&nbsp; <a id="cb-p2" href="#">—</a></div></div>
+    <div class="cbar-item"><div class="cbar-ico">📧</div><div class="cbar-txt"><h4>Email Us</h4><a id="cb-em" href="#">—</a></div></div>
+    <div class="cbar-item"><div class="cbar-ico">📍</div><div class="cbar-txt"><h4>Office</h4><p id="cb-addr">—</p></div></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand fc">
+      <div class="footer-name"><span class="fn1">Edu</span><span class="fn2"> Calling</span> <span style="color:rgba(255,255,255,.3);font-size:13px;font-weight:400;">Global LLP</span></div>
+      <p>Kerala's most trusted MBBS abroad consultancy. Helping students from Kozhikode and across India achieve their dream of studying medicine in NMC &amp; WHO recognised universities across Egypt, Uzbekistan, Kazakhstan, Georgia and Bulgaria.</p>
+    </div>
+    <div class="fc"><h4>Countries</h4><ul>
+      <li><a href="#">🇪🇬 Egypt</a></li>
+      <li><a href="#">🇺🇿 Uzbekistan</a></li>
+      <li><a href="#">🇰🇿 Kazakhstan</a></li>
+      <li><a href="#">🇬🇪 Georgia</a></li>
+      <li><a href="#">🇧🇬 Bulgaria</a></li>
+    </ul></div>
+    <div class="fc"><h4>Services</h4><ul>
+      <li><a href="#">University Admissions</a></li>
+      <li><a href="#">Visa Assistance</a></li>
+      <li><a href="#">NEET Guidance</a></li>
+      <li><a href="#">Scholarship Support</a></li>
+      <li><a href="#">SOP / LOR Writing</a></li>
+      <li><a href="#">Pre-Departure Briefing</a></li>
+    </ul></div>
+    <div class="fc" id="footer-contact"><h4>Contact</h4><ul>
+      <li><a id="ft-p1" href="#">—</a></li>
+      <li><a id="ft-p2" href="#">—</a></li>
+      <li><a id="ft-em" href="#">—</a></li>
+      <li><a href="#" id="ft-addr">—</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 EduCalling Global LLP. All rights reserved.</span>
+    <span id="ft-addr2">—</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+   ADMIN PANEL (invisible to public — type "admin2025" anywhere)
+============================================================ -->
+<div id="admin-overlay">
+  <!-- Password screen -->
+  <div id="admin-pw-screen">
+    <div class="pw-box">
+      <div style="font-size:36px;margin-bottom:12px;">🔐</div>
+      <h3>Admin Access</h3>
+      <p>Enter the admin password to manage university details and student contacts.</p>
+      <input type="password" id="pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()"/>
+      <button class="pw-btn" onclick="checkPw()">Unlock Admin Panel</button>
+      <div class="pw-err" id="pw-err"></div>
+    </div>
+  </div>
+
+  <!-- Admin dashboard (shown after login) -->
+  <div id="admin-dash" style="display:none;">
+    <div class="admin-bar">
+      <h2>🛠️ EduCalling Admin Panel <span style="font-size:13px;font-weight:400;color:rgba(255,255,255,.5);margin-left:10px;">Hidden from public</span></h2>
+      <button class="admin-btn admin-btn-s" onclick="closeAdmin()">✕ Close</button>
+    </div>
+    <div class="admin-body">
+
+      <!-- STUDENT CONTACTS (hidden from clients) -->
+      <div class="admin-section">
+        <h3>👤 Student Contacts — University Ambassadors <span style="font-size:11px;color:rgba(255,255,255,.4);font-weight:400;">(Never shown to public)</span></h3>
+        <p style="font-size:12px;color:rgba(255,255,255,.45);margin-bottom:16px;">Add phone numbers of students studying at each university. These are ONLY visible here in the admin panel — clients can never see them.</p>
+        <div id="student-list" style="margin-bottom:16px;"></div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Student Name</label><input type="text" id="st-name" placeholder="e.g. Arun Kumar"/></div>
+          <div class="admin-fg"><label>University</label>
+            <select id="st-uni"></select>
+          </div>
+        </div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Phone / WhatsApp</label><input type="text" id="st-phone" placeholder="+91 XXXXX XXXXX"/></div>
+          <div class="admin-fg"><label>City (Kerala)</label><input type="text" id="st-city" placeholder="Kozhikode"/></div>
+        </div>
+        <button class="admin-btn admin-btn-p" onclick="addStudent()">+ Add Student Contact</button>
+        <div class="admin-note">All student contacts are stored only in your browser's local storage. They are never shown on the public website.</div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="admin-section">
+        <h3>📞 Contact Information</h3>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Phone 1</label><input type="text" id="ad-p1" placeholder="+91 9946 45 4884"/></div>
+          <div class="admin-fg"><label>Phone 2</label><input type="text" id="ad-p2" placeholder="+91 9292 44 4884"/></div>
+        </div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Email</label><input type="text" id="ad-em" placeholder="educallingllp@gmail.com"/></div>
+          <div class="admin-fg"><label>Office Hours</label><input type="text" id="ad-hrs" placeholder="Mon–Sat: 9AM–6PM"/></div>
+        </div>
+        <div class="admin-fg" style="margin-bottom:12px;"><label>Address</label><input type="text" id="ad-addr" placeholder="Masjid Building, University Road, Kozhikode"/></div>
+        <button class="admin-btn admin-btn-p" onclick="saveContact()">💾 Save Contact Info</button>
+      </div>
+
+      <!-- UNIVERSITY FEE EDITOR -->
+      <div class="admin-section">
+        <h3>🏛️ Quick Edit — University Fee / Details</h3>
+        <p style="font-size:12px;color:rgba(255,255,255,.45);margin-bottom:16px;">Select a university to quickly update its course fee, accommodation, food or ranking label shown on the card.</p>
+        <div class="admin-fg" style="margin-bottom:14px;"><label>Select University</label><select id="uni-edit-sel" onchange="loadUniEdit()"></select></div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Fee Label (shown on card)</label><input type="text" id="ue-fee-label" placeholder="e.g. ₹3.5L/year"/></div>
+          <div class="admin-fg"><label>Budget (₹ Lakhs/year — for filter)</label><input type="number" id="ue-fee-year" step="0.1" placeholder="3.5"/></div>
+        </div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Accommodation</label><input type="text" id="ue-accom" placeholder="₹10,000/month"/></div>
+          <div class="admin-fg"><label>Food</label><input type="text" id="ue-food" placeholder="₹12,000/month"/></div>
+        </div>
+        <div class="admin-row">
+          <div class="admin-fg"><label>Duration</label><input type="text" id="ue-dur" placeholder="6 Years"/></div>
+          <div class="admin-fg"><label>Ranking</label><input type="text" id="ue-rank" placeholder="WR: 6355"/></div>
+        </div>
+        <div class="admin-fg" style="margin-bottom:14px;"><label>Fee Note (shown below fee table)</label><textarea id="ue-note" placeholder="Additional notes about fees..."></textarea></div>
+        <button class="admin-btn admin-btn-p" onclick="saveUniEdit()">💾 Save University Changes</button>
+        <div class="admin-note">Changes update the live cards immediately. Refresh the page to revert to defaults.</div>
+      </div>
+
+      <!-- HOW TO EDIT -->
+      <div class="admin-section">
+        <h3>📖 How to Edit This Website</h3>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9;">
+          <p><strong style="color:#fff;">To edit universities permanently:</strong> Open the HTML file in Notepad or any editor → find <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">SECTION 2 — UNIVERSITIES DATA</code> → edit the data in the <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">UNIVERSITIES</code> array. Each university is one object with clearly labelled fields.</p>
+          <p style="margin-top:10px;"><strong style="color:#fff;">To change contact info permanently:</strong> Find <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">SECTION 1 — CONTACT INFO</code> → edit the <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">CONTACT</code> object at the top.</p>
+          <p style="margin-top:10px;"><strong style="color:#fff;">To change colors:</strong> Find <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">ROOT DESIGN TOKENS</code> at the top of the CSS and edit <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">--c-navy</code> or <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">--c-orange</code>.</p>
+          <p style="margin-top:10px;"><strong style="color:#fff;">Admin password:</strong> Find <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">checkPw()</code> function → change <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">'admin2025'</code> to your preferred password.</p>
+          <p style="margin-top:10px;"><strong style="color:#fff;">To open admin panel:</strong> Type <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">admin2025</code> anywhere on the keyboard while on the website page.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+   JAVASCRIPT
+============================================================ -->
+<script>
+/* ── 1. Populate contact info from CONTACT object ── */
+function initContact(){
+  const c = CONTACT;
+  // topbar
+  document.getElementById('tb-addr').textContent = c.address;
+  const p1el = document.getElementById('tb-p1'); p1el.textContent = c.phone1; p1el.href='tel:'+c.phone1.replace(/\s/g,'');
+  const p2el = document.getElementById('tb-p2'); p2el.textContent = c.phone2; p2el.href='tel:'+c.phone2.replace(/\s/g,'');
+  const emel = document.getElementById('tb-em'); emel.textContent = c.email; emel.href='mailto:'+c.email;
+  // navbar
+  document.getElementById('nav-call').href='tel:'+c.phone1.replace(/\s/g,'');
+  document.getElementById('nav-call').textContent='📞 '+c.phone1;
+  // contact section
+  const ci1=document.getElementById('ci-p1'); ci1.textContent=c.phone1; ci1.href='tel:'+c.phone1.replace(/\s/g,'');
+  const ci2=document.getElementById('ci-p2'); ci2.textContent=c.phone2; ci2.href='tel:'+c.phone2.replace(/\s/g,'');
+  const cie=document.getElementById('ci-em'); cie.textContent=c.email; cie.href='mailto:'+c.email;
+  document.getElementById('ci-addr').textContent=c.address;
+  document.getElementById('ci-hrs').textContent=c.hours;
+  // contact bar
+  const cb1=document.getElementById('cb-p1'); cb1.textContent=c.phone1; cb1.href='tel:'+c.phone1.replace(/\s/g,'');
+  const cb2=document.getElementById('cb-p2'); cb2.textContent=c.phone2; cb2.href='tel:'+c.phone2.replace(/\s/g,'');
+  const cbe=document.getElementById('cb-em'); cbe.textContent=c.email; cbe.href='mailto:'+c.email;
+  document.getElementById('cb-addr').textContent=c.address;
+  // WA float
+  document.querySelector('.wa-float').href='https://wa.me/'+c.whatsapp;
+  // footer
+  const ft1=document.getElementById('ft-p1'); ft1.textContent='📞 '+c.phone1; ft1.href='tel:'+c.phone1.replace(/\s/g,'');
+  const ft2=document.getElementById('ft-p2'); ft2.textContent='📞 '+c.phone2; ft2.href='tel:'+c.phone2.replace(/\s/g,'');
+  const fte=document.getElementById('ft-em'); fte.textContent='✉️ '+c.email; fte.href='mailto:'+c.email;
+  document.getElementById('ft-addr').textContent='📍 '+c.address;
+  document.getElementById('ft-addr2').textContent=c.address;
+}
+
+/* ── 2. Runtime overrides (from admin saves) ── */
+let uniOverrides = JSON.parse(localStorage.getItem('ec_uni_overrides')||'{}');
+let contactOverride = JSON.parse(localStorage.getItem('ec_contact')||'null');
+if(contactOverride){ Object.assign(CONTACT,contactOverride); }
+UNIVERSITIES.forEach(u=>{ if(uniOverrides[u.id]) Object.assign(u,uniOverrides[u.id]); });
+
+/* ── 3. Build university cards ── */
+let currentCountry = 'all';
+let currentSort = 'fee';
+const tagColors = {'NMC Recognized':'utag-g','WHO Listed':'utag-b','WHO & FAIMER':'utag-b','EU Degree':'utag-g','QS Ranked':'utag-b','ECFMG Listed':'utag-b'};
+
+function tagClass(t){
+  for(const k in tagColors) if(t.includes(k)) return tagColors[k];
+  return 'utag-o';
+}
+
+function buildCards(){
+  const grid = document.getElementById('unis-grid');
+  grid.innerHTML = '';
+  let list = UNIVERSITIES.filter(u=> currentCountry==='all' || u.country===currentCountry);
+
+  // Sort
+  const sortKey = {fee:'fee_year', accommodation:u=>parseFloat(u.accommodation||'0'), food:u=>parseFloat(u.food||'0')};
+  if(currentSort==='fee') list.sort((a,b)=>a.fee_year-b.fee_year);
+  else if(currentSort==='accommodation') list.sort((a,b)=>parseFloat(a.accommodation)-parseFloat(b.accommodation));
+  else if(currentSort==='food') list.sort((a,b)=>parseFloat(a.food)-parseFloat(b.food));
+
+  document.getElementById('result-count').textContent = 'Showing '+list.length+' universit'+(list.length===1?'y':'ies');
+  document.getElementById('hero-uni-count').textContent = UNIVERSITIES.length;
+
+  list.forEach(u=>{
+    const card = document.createElement('div');
+    card.className = 'ucard show';
+    card.setAttribute('data-id', u.id);
+    card.setAttribute('data-country', u.country);
+    card.setAttribute('data-fee', u.fee_year);
+
+    const feeRows = u.fee_table.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('');
+    const tags = u.tags.slice(0,3).map(t=>`<span class="utag ${tagClass(t)}">${t}</span>`).join('');
+
+    card.innerHTML = `
+      <div class="ucard-img">
+        <img src="${u.img||''}" alt="${u.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="ucard-img-ph" style="display:none">${u.emoji||'🏛️'}</div>
+        <div class="upill-country">${u.flag} ${u.country.charAt(0).toUpperCase()+u.country.slice(1)}</div>
+        <div class="upill-rank">${u.ranking||'NMC ✅'}</div>
+        <div class="ubadge-match">✓ Budget Match</div>
+      </div>
+      <div class="ucard-body">
+        <div class="ucard-name">${u.name}</div>
+        <div class="ucard-loc">📍 ${u.city}</div>
+        <div class="ucard-tags">${tags}</div>
+        <div class="ucard-stats">
+          <div class="ustat"><div class="ustat-lbl">Course Fee</div><div class="ustat-val">${u.fee_label}</div></div>
+          <div class="ustat"><div class="ustat-lbl">Duration</div><div class="ustat-val">${u.duration}</div></div>
+          <div class="ustat"><div class="ustat-lbl">Accommodation</div><div class="ustat-val">${u.accommodation}</div></div>
+          <div class="ustat"><div class="ustat-lbl">Food</div><div class="ustat-val">${u.food}</div></div>
+        </div>
+        <div class="fee-accord">
+          <button class="fee-tog" onclick="feeToggle(this)">📊 View Fee Structure <span class="arr">▼</span></button>
+          <div class="fee-body">
+            <table class="fee-tbl">
+              <thead><tr><th>Fee Component</th><th>Amount</th><th>In INR</th></tr></thead>
+              <tbody>
+                ${feeRows}
+                <tr class="tot"><td><b>Total / Year</b></td><td><b>${u.fee_total[0]}</b></td><td><b>${u.fee_total[1]}</b></td></tr>
+                <tr class="tot"><td><b>Full Course</b></td><td><b>${u.fee_total6[0]}</b></td><td><b>${u.fee_total6[1]}</b></td></tr>
+              </tbody>
+            </table>
+            <div class="fee-note">${u.fee_note||''}</div>
+          </div>
+        </div>
+        <div class="ucard-act">
+          <a href="#contact" class="ucard-btn ucard-btn-p">Apply Now</a>
+          <a href="#contact" class="ucard-btn ucard-btn-s">Get Details</a>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+  updateBudgetHighlight();
+}
+
+/* ── 4. Filter by country ── */
+function filterCountry(country, btn){
+  currentCountry = country;
+  document.querySelectorAll('.ctab').forEach(t=>t.classList.remove('act'));
+  btn.classList.add('act');
+  document.getElementById('hero-country').value = country;
+  buildCards();
+}
+
+/* ── 5. Sort ── */
+function sortBy(key, btn){
+  currentSort = key;
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('act'));
+  btn.classList.add('act');
+  buildCards();
+}
+
+/* ── 6. Hero search ── */
+function heroSearch(){
+  const country = document.getElementById('hero-country').value;
+  const budget  = parseFloat(document.getElementById('sc-slider').value);
+  currentCountry = country;
+  document.querySelectorAll('.ctab').forEach(t=>t.classList.remove('act'));
+  const tabs = document.querySelectorAll('.ctab');
+  if(country==='all') tabs[0].classList.add('act');
+  else tabs.forEach(t=>{ if(t.textContent.toLowerCase().includes(country)) t.classList.add('act'); });
+  buildCards();
+  // highlight budget matches
+  document.querySelectorAll('.ucard').forEach(c=>{
+    const fee=parseFloat(c.getAttribute('data-fee')||'99');
+    c.classList.toggle('budget-match',fee<=budget);
+  });
+  document.getElementById('universities').scrollIntoView({behavior:'smooth'});
+}
+
+/* ── 7. Sliders ── */
+function scSlide(v){ document.getElementById('sc-val').textContent='₹'+parseFloat(v).toFixed(parseFloat(v)%1===0?0:1)+' Lakhs/year'; }
+function bigSlide(v){
+  const n=parseFloat(v);
+  document.getElementById('big-val').textContent='₹'+n.toFixed(n%1===0?0:1)+' Lakhs/year';
+  const count=UNIVERSITIES.filter(u=>u.fee_year<=n).length;
+  document.getElementById('match-num').textContent=count+' Universit'+(count===1?'y':'ies')+' Match';
+  const descs=['','Most affordable Uzbekistan options (Samarkand, Bukhara)','Uzbekistan universities match your budget','Uzbekistan + Egypt (Al-Nahda) + Kazakhstan (S.Kaz) match','Egypt, Uzbekistan & Kazakhstan options available','Egypt, Uzbekistan, Kazakhstan & most Georgia universities match','Almost all universities across 5 countries match','All universities including Bulgaria EU degree match'];
+  const idx=Math.min(Math.round(n/1.5),descs.length-1);
+  document.getElementById('match-desc').textContent=descs[idx]||'All universities match your budget';
+  document.querySelectorAll('.ucard').forEach(c=>{
+    const fee=parseFloat(c.getAttribute('data-fee')||'99');
+    c.classList.toggle('budget-match',fee<=n);
+  });
+}
+function updateBudgetHighlight(){
+  const v=parseFloat(document.getElementById('big-slider').value);
+  document.querySelectorAll('.ucard').forEach(c=>{
+    const fee=parseFloat(c.getAttribute('data-fee')||'99');
+    c.classList.toggle('budget-match',fee<=v);
+  });
+}
+
+/* ── 8. Fee accordion ── */
+function feeToggle(btn){
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+
+/* ── 9. FAQ ── */
+function faqToggle(q){
+  q.classList.toggle('open');
+  q.nextElementSibling.classList.toggle('open');
+}
+
+/* ── 10. Nav scroll active ── */
+window.addEventListener('scroll',()=>{
+  document.querySelectorAll('.nav-menu a').forEach(a=>{
+    const sec=document.getElementById(a.getAttribute('href').replace('#',''));
+    if(sec && window.scrollY>=sec.offsetTop-120) {
+      document.querySelectorAll('.nav-menu a').forEach(x=>x.classList.remove('act'));
+      a.classList.add('act');
+    }
+  });
+});
+
+/* ── 11. ADMIN PANEL ── */
+const ADMIN_PW = 'admin2025'; // ← change this password
+let adminOpen=false, keyBuf='';
+
+document.addEventListener('keydown',e=>{
+  keyBuf+=e.key;
+  if(keyBuf.length>20) keyBuf=keyBuf.slice(-20);
+  if(keyBuf.includes(ADMIN_PW) && !adminOpen){
+    document.getElementById('admin-overlay').classList.add('show');
+    adminOpen=true; keyBuf='';
+  }
+});
+
+function checkPw(){
+  const v=document.getElementById('pw-input').value;
+  if(v===ADMIN_PW){
+    document.getElementById('admin-pw-screen').style.display='none';
+    document.getElementById('admin-dash').style.display='block';
+    initAdminDash();
+  } else {
+    document.getElementById('pw-err').textContent='Incorrect password. Try again.';
+  }
+}
+
+function closeAdmin(){
+  document.getElementById('admin-overlay').classList.remove('show');
+  adminOpen=false;
+  document.getElementById('pw-input').value='';
+  document.getElementById('pw-err').textContent='';
+  document.getElementById('admin-pw-screen').style.display='flex';
+  document.getElementById('admin-dash').style.display='none';
+}
+
+function initAdminDash(){
+  // Populate university selects
+  const sel1=document.getElementById('st-uni');
+  const sel2=document.getElementById('uni-edit-sel');
+  sel1.innerHTML=''; sel2.innerHTML='';
+  UNIVERSITIES.forEach(u=>{
+    const o1=document.createElement('option'); o1.value=u.id; o1.textContent=u.name; sel1.appendChild(o1);
+    const o2=document.createElement('option'); o2.value=u.id; o2.textContent=u.name; sel2.appendChild(o2);
+  });
+  renderStudentList();
+  // Pre-fill contact
+  document.getElementById('ad-p1').value=CONTACT.phone1;
+  document.getElementById('ad-p2').value=CONTACT.phone2;
+  document.getElementById('ad-em').value=CONTACT.email;
+  document.getElementById('ad-hrs').value=CONTACT.hours;
+  document.getElementById('ad-addr').value=CONTACT.address;
+  loadUniEdit();
+}
+
+/* Student contacts */
+function getStudents(){ return JSON.parse(localStorage.getItem('ec_students')||'[]'); }
+function saveStudents(s){ localStorage.setItem('ec_students',JSON.stringify(s)); }
+function addStudent(){
+  const name=document.getElementById('st-name').value.trim();
+  const uni=document.getElementById('st-uni').value;
+  const phone=document.getElementById('st-phone').value.trim();
+  const city=document.getElementById('st-city').value.trim();
+  if(!name||!phone){ alert('Please enter name and phone'); return; }
+  const s=getStudents();
+  const uName=UNIVERSITIES.find(u=>u.id===uni)?.name||uni;
+  s.push({name,uni,uName,phone,city,added:new Date().toLocaleDateString()});
+  saveStudents(s);
+  renderStudentList();
+  document.getElementById('st-name').value='';
+  document.getElementById('st-phone').value='';
+  document.getElementById('st-city').value='';
+}
+function renderStudentList(){
+  const s=getStudents();
+  const el=document.getElementById('student-list');
+  if(!s.length){ el.innerHTML='<p style="color:rgba(255,255,255,.4);font-size:13px;">No student contacts added yet.</p>'; return; }
+  el.innerHTML='<div class="uni-list">'+s.map((st,i)=>`
+    <div class="uni-list-item">
+      <div>
+        <span>${st.name} — ${st.phone}</span><br/>
+        <small>${st.uName} | ${st.city||'—'} | Added ${st.added}</small>
+      </div>
+      <button class="uni-del" onclick="delStudent(${i})">Delete</button>
+    </div>`).join('')+'</div>';
+}
+function delStudent(i){ const s=getStudents(); s.splice(i,1); saveStudents(s); renderStudentList(); }
+
+/* Save contact */
+function saveContact(){
+  const c={
+    phone1:document.getElementById('ad-p1').value,
+    phone2:document.getElementById('ad-p2').value,
+    email:document.getElementById('ad-em').value,
+    hours:document.getElementById('ad-hrs').value,
+    address:document.getElementById('ad-addr').value,
+    whatsapp:document.getElementById('ad-p1').value.replace(/\D/g,'')
+  };
+  Object.assign(CONTACT,c);
+  localStorage.setItem('ec_contact',JSON.stringify(c));
+  initContact();
+  alert('✅ Contact info saved and updated on the website!');
+}
+
+/* Uni edit */
+function loadUniEdit(){
+  const id=document.getElementById('uni-edit-sel').value;
+  const u=UNIVERSITIES.find(x=>x.id===id);
+  if(!u) return;
+  document.getElementById('ue-fee-label').value=u.fee_label||'';
+  document.getElementById('ue-fee-year').value=u.fee_year||'';
+  document.getElementById('ue-accom').value=u.accommodation||'';
+  document.getElementById('ue-food').value=u.food||'';
+  document.getElementById('ue-dur').value=u.duration||'';
+  document.getElementById('ue-rank').value=u.ranking||'';
+  document.getElementById('ue-note').value=u.fee_note||'';
+}
+function saveUniEdit(){
+  const id=document.getElementById('uni-edit-sel').value;
+  const u=UNIVERSITIES.find(x=>x.id===id);
+  if(!u) return;
+  const changes={
+    fee_label:document.getElementById('ue-fee-label').value,
+    fee_year:parseFloat(document.getElementById('ue-fee-year').value)||u.fee_year,
+    accommodation:document.getElementById('ue-accom').value,
+    food:document.getElementById('ue-food').value,
+    duration:document.getElementById('ue-dur').value,
+    ranking:document.getElementById('ue-rank').value,
+    fee_note:document.getElementById('ue-note').value
+  };
+  Object.assign(u,changes);
+  if(!uniOverrides[id]) uniOverrides[id]={};
+  Object.assign(uniOverrides[id],changes);
+  localStorage.setItem('ec_uni_overrides',JSON.stringify(uniOverrides));
+  buildCards();
+  alert('✅ University updated! Changes are now live on the website.');
+}
+
+/* ── INIT ── */
+initContact();
+buildCards();
+// Sync big slider on load
+bigSlide(document.getElementById('big-slider').value);
+</script>
+</body>
+</html>
